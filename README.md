@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="frontend/public/apple-touch-icon.png" alt="OpenBench Owl" width="110" height="110" />
+<img src="frontend/public/pngtree-eurasian-eagle-owl-png-image_12527751-removebg-preview.png" alt="OpenBench Owl" width="110" height="110" />
 
 # OpenBench
 
