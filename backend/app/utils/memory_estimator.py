@@ -153,17 +153,23 @@ def estimate_memory_all_quants(
 
 def can_run_status(total_gb_needed: float, available_gb: float) -> str:
     """
-    Returns:
-        comfortable  — fits with >20% headroom
-        marginal     — fits but <20% headroom
-        cannot_run   — does not fit
+    Ratio-based 4-tier fit classification mirroring real llama.cpp behaviour.
+
+    ratio = required / available
+
+    <= 0.82  comfortable  — generous headroom, stable at any context
+    <= 0.97  tight_fit    — likely works with flash-attn / mmap / reduced ctx
+    <= 1.25  marginal     — partial GPU offload; degraded tok/s
+    >  1.25  cannot_run   — OOM likely even with offloading
     """
     if available_gb <= 0:
         return "unknown"
     ratio = total_gb_needed / available_gb
-    if ratio <= 0.80:
+    if ratio <= 0.82:
         return "comfortable"
-    elif ratio <= 1.00:
+    elif ratio <= 0.97:
+        return "tight_fit"
+    elif ratio <= 1.25:
         return "marginal"
     return "cannot_run"
 

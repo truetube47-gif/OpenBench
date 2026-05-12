@@ -5,9 +5,10 @@ from enum import Enum
 
 class CanRunStatus(str, Enum):
     COMFORTABLE = "comfortable"
-    MARGINAL = "marginal"
-    CANNOT_RUN = "cannot_run"
-    UNKNOWN = "unknown"
+    TIGHT_FIT   = "tight_fit"
+    MARGINAL    = "marginal"
+    CANNOT_RUN  = "cannot_run"
+    UNKNOWN     = "unknown"
 
 
 class HardwareProfile(BaseModel):
@@ -311,10 +312,12 @@ class ModelCompatibilityResult(BaseModel):
     status: CanRunStatus
     required_gb: float
     available_gb: float
+    fit_ratio: float = 0.0
     expected_tps: Optional[float] = None
     max_safe_context: int = 4096
     recommended_backend: str = "llama.cpp"
     warnings: List[str] = []
+    optimization_hints: List[str] = []
 
 
 class HardwareCheckRequest(BaseModel):
@@ -326,5 +329,6 @@ class HardwareCheckResponse(BaseModel):
     models: List[ModelCompatibilityResult]
     total: int
     comfortable_count: int = 0
+    tight_fit_count: int = 0
     marginal_count: int = 0
     cannot_run_count: int = 0
