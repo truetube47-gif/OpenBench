@@ -15,6 +15,8 @@ Realistic VRAM estimation, quantization selection, hardware compatibility checks
 
 [Live Demo](https://openbench.ai) &bull; [API Docs](https://openbench.ai/docs) &bull; [Report Bug](https://github.com/truetube47-gif/openbench/issues/new?template=bug_report.md) &bull; [Request Feature](https://github.com/truetube47-gif/openbench/issues/new?template=feature_request.md)
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 </div>
 
 ---
