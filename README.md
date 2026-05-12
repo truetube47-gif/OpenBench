@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="frontend/public/apple-touch-icon.png" alt="OpenBench Owl" width="110" height="110" />
+
 # OpenBench
 
 ### Can I Run This LLM? Find Out in Seconds.
@@ -67,8 +69,23 @@ LLM inference is memory-bandwidth bound. We calculate tok/s from `bandwidth / mo
 ### Model Comparison
 Side-by-side analysis: benchmark scores, capability radar, quant ladders, speed estimates, and an AI-generated winner summary.
 
+**Built for model surgery workflows.** After fine-tuning, abliteration, LoRA merging, or DARE/TIES blending, models can silently lose capabilities in reasoning, coding, or instruction-following. OpenBench surfaces these regressions without subjective prompting — just upload both GGUFs and let the benchmarks speak.
+
+| Workflow | What to compare |
+|----------|-----------------|
+| Fine-tuned model | Your fine-tune vs. base — did training degrade general reasoning? |
+| [Abliterated](https://colab.research.google.com/github/elder-plinius/OBLITERATUS/blob/main/notebooks/abliterate.ipynb) model | Pre/post — which benchmarks dropped after capability removal? |
+| LoRA merge | Merged model vs. base — capability leakage from the adapter? |
+| Quantized + fine-tuned | Q4 fine-tune vs. Q4 base — quality loss from quant or from training? |
+
 ### Local GGUF Analysis
 Upload the first 2 MB of any `.gguf` file — get full analysis without HuggingFace, without downloading the whole model.
+
+**Works with private and unpublished models.** No repository required. Ideal for:
+- Locally fine-tuned checkpoints not yet shared anywhere
+- Post-abliteration variants you want to evaluate before publishing
+- LoRA-merged or DARE/TIES blended models
+- Custom quantizations produced with `llama.cpp` conversion scripts
 
 ### Community Benchmarks
 Crowd-sourced tok/s measurements organized by model + hardware + quantization + framework. Real numbers from real users.

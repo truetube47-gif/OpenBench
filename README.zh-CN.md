@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="frontend/public/apple-touch-icon.png" alt="OpenBench Owl" width="110" height="110" />
+
 # OpenBench
 
 ### 我能运行这个 LLM 吗？几秒钟出答案。
@@ -67,8 +69,23 @@ LLM 推理受内存带宽限制。我们按 `带宽 / 模型大小 × 效率` �
 ### 模型对比
 并排分析：基准分数、能力雷达、量化阶梯、速度估算、AI 生成的获胜摘要。
 
+**专为模型改造工作流设计。** 在微调、去能力化（abliteration）、LoRA 合并或 DARE/TIES 混合后，模型可能静默丢失推理、编程或指令跟随能力。OpenBench 无需主观提示即可发现这些能力退化 —— 上传两个 GGUF，让基准说话。
+
+| 工作流 | 比较对象 |
+|--------|----------|
+| 微调模型 | 微调版 vs. 基础版 —— 训练是否损害了通用推理？ |
+| [去能力化](https://colab.research.google.com/github/elder-plinius/OBLITERATUS/blob/main/notebooks/abliterate.ipynb)模型 | 处理前后 —— 能力移除后哪些基准分数下降？ |
+| LoRA 合并 | 合并模型 vs. 基础模型 —— 适配器是否导致能力泄漏？ |
+| 量化 + 微调 | Q4 微调 vs. Q4 基础 —— 损失来自量化还是训练？ |
+
 ### 本地 GGUF 分析
 上传任意 `.gguf` 文件的前 2 MB —— 无需 HuggingFace，无需下载整个模型即可获得完整分析。
+
+**支持私有和未发布模型。** 无需仓库。适用于：
+- 尚未分享的本地微调检查点
+- 想在发布前评估的去能力化变体
+- LoRA 合并或 DARE/TIES 混合模型
+- 使用 `llama.cpp` 转换脚本生成的自定义量化版本
 
 ### 社区基准
 众包 tok/s 测量，按模型 + 硬件 + 量化 + 框架组织。来自真实用户的真实数据。

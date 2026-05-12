@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     "GGUF", "llama.cpp", "Ollama", "VRAM estimation", "model comparison",
     "AI hardware compatibility", "quantization guide", "Open LLM Leaderboard",
     "Hugging Face GGUF", "RTX 3060 LLM", "Apple Silicon LLM",
+    "fine-tuned model comparison", "LLM fine-tune benchmark", "abliteration LLM",
+    "model capability regression", "LoRA merge evaluation", "DARE TIES model merge",
+    "custom GGUF analysis", "compare fine-tune vs base model", "model surgery benchmark",
+    "private GGUF analysis", "local model evaluation", "pre post fine-tune benchmark",
   ],
   authors: [{ name: "OpenBench" }],
   icons: {
