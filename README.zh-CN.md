@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="frontend/public/pngtree-eurasian-eagle-owl-png-image_12527751-removebg-preview.png" alt="OpenBench Owl" width="110" height="110" />
+<img src="frontend/public/pngtree-eurasian-eagle-owl-png-image_12527751-removebg-preview.png" alt="VRAMfit Owl" width="110" height="110" />
 
-# OpenBench
+# VRAMfit
 
 ### 我能运行这个 LLM 吗？几秒钟出答案。
 
-**开源本地大模型部署智能平台。**
+**开源本地大模型部署智能平台。为你的显存找到完美适配。**
 真实的显存估算、量化选择、硬件兼容性检查、推理速度预测 —— 直接在浏览器完成。
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](../LICENSE)
@@ -15,7 +15,7 @@
 [![Next.js 14](https://img.shields.io/badge/Next.js-14-black.svg)](https://nextjs.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://fastapi.tiangolo.com)
 
-[在线演示](https://openbench.ai) &bull; [API 文档](https://openbench.ai/docs)
+[在线演示](https://vramfit.ai) &bull; [API 文档](https://vramfit.ai/docs)
 
 [English](README.md) | [中文](README.zh-CN.md)
 
@@ -36,9 +36,9 @@
 
 ## 解决方案
 
-OpenBench 瞬间回答 **"我能跑这个吗？"**：
+VRAMfit 瞬间回答 **"我能跑这个吗？"**：
 
-| 你问 | OpenBench 回答 |
+| 你问 | VRAMfit 回答 |
 |---------|-------------------|
 | *"RTX 3060 能跑 Qwen3-14B 吗？"* | ✅ Q4_K_M 只需 11.2 GB —— 约 38 tok/s |
 | *"8 GB 显存选哪个量化？"* | IQ4_XS —— 预算内最佳质量 |
@@ -69,7 +69,7 @@ LLM 推理受内存带宽限制。我们按 `带宽 / 模型大小 × 效率` �
 ### 模型对比
 并排分析：基准分数、能力雷达、量化阶梯、速度估算、AI 生成的获胜摘要。
 
-**专为模型改造工作流设计。** 在微调、去能力化（abliteration）、LoRA 合并或 DARE/TIES 混合后，模型可能静默丢失推理、编程或指令跟随能力。OpenBench 无需主观提示即可发现这些能力退化 —— 上传两个 GGUF，让基准说话。
+**专为模型改造工作流设计。** 在微调、去能力化（abliteration）、LoRA 合并或 DARE/TIES 混合后，模型可能静默丢失推理、编程或指令跟随能力。VRAMfit 无需主观提示即可发现这些能力退化 —— 上传两个 GGUF，让基准说话。
 
 | 工作流 | 比较对象 |
 |--------|----------|
@@ -226,7 +226,7 @@ OpenBench/
 - [ ] 第三方集成 API 密钥
 - [ ] 浏览器扩展 (在 HuggingFace 上"检查兼容性")
 - [ ] 移动端优化 UI
-- [ ] Ollama 集成 (从 OpenBench 拉取 + 运行)
+- [ ] Ollama 集成 (从 VRAMfit 拉取 + 运行)
 
 ---
 
@@ -258,6 +258,6 @@ OpenBench/
 
 **如果这个项目帮你为硬件选对了模型，请考虑给个 Star。**
 
-Made with precision by the OpenBench team.
+Made with precision by the VRAMfit team.
 
 </div>

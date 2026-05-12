@@ -1,12 +1,12 @@
 # GitHub Social Preview Image
 
 ## What is this?
-The social preview is the image that appears when you share the OpenBench repo on Twitter, LinkedIn, or other platforms. GitHub recommends **1200×630 pixels** (1.91:1 ratio).
+The social preview is the image that appears when you share the VRAMfit repo on Twitter, LinkedIn, or other platforms. GitHub recommends **1200×630 pixels** (1.91:1 ratio).
 
 ## How to set it
-1. Go to https://github.com/truetube47-gif/openbench/settings
+1. Go to https://github.com/truetube47-gif/vramfit/settings
 2. Scroll to "Social preview"
-3. Upload `openbench-social.png` (create using spec below)
+3. Upload `vramfit-social.png` (create using spec below)
 4. Click "Save changes"
 
 ## Design Spec
@@ -15,15 +15,15 @@ The social preview is the image that appears when you share the OpenBench repo o
 Use the project owl icon from `frontend/public/icon.svg`:
 
 - **Background:** Dark gradient (#0a0a0f → #1a1a2e)
-- **Center:** The OpenBench owl logo (from icon.svg)
+- **Center:** The VRAMfit owl logo (from icon.svg)
 - **Text:** 
-  - "OpenBench" — large, bold, white
+  - "VRAMfit" — large, bold, white
   - "Can I Run This LLM?" — smaller, accent color (#6366f1)
 - **Tech badges:** FastAPI + Next.js logos (small, bottom right)
 
 ### Option B: Clean Minimal
 - **Background:** Solid dark (#0f172a)
-- **Text:** "OpenBench" in large monospace or tech font
+- **Text:** "VRAMfit" in large monospace or tech font
 - **Tagline:** "Deployment Intelligence for Local LLMs"
 - **Accent:** Indigo/purple gradient bar
 

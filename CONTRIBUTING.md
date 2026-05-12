@@ -1,6 +1,6 @@
-# Contributing to OpenBench
+# Contributing to VRAMfit
 
-Thank you for your interest in contributing! OpenBench is an open-source LLM deployment intelligence platform.
+Thank you for your interest in contributing! VRAMfit is an open-source LLM deployment intelligence platform.
 
 ## Getting Started
 

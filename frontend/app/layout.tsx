@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://openbench.ai";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://vramfit.ai";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "OpenBench — Can I Run This LLM? Local AI Deployment Intelligence",
-    template: "%s | OpenBench",
+    default: "VRAMfit — Can I Run This LLM? Local AI Deployment Intelligence",
+    template: "%s | VRAMfit",
   },
   description:
     "Know exactly which LLMs your hardware can run. Instant VRAM estimates, quantization recommendations, inference speed predictions, and ready-to-paste llama.cpp / Ollama commands.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "custom GGUF analysis", "compare fine-tune vs base model", "model surgery benchmark",
     "private GGUF analysis", "local model evaluation", "pre post fine-tune benchmark",
   ],
-  authors: [{ name: "OpenBench" }],
+  authors: [{ name: "VRAMfit" }],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "OpenBench — Can I Run This LLM?",
+    title: "VRAMfit — Can I Run This LLM?",
     description:
       "Instant VRAM requirements, quantization recommendations, and inference speed for any LLM on your hardware. llama.cpp, Ollama, vLLM recipes included.",
     url: BASE_URL,
-    siteName: "OpenBench",
+    siteName: "VRAMfit",
     type: "website",
     locale: "en_US",
     images: [
@@ -45,13 +45,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "OpenBench — LLM Comparison Platform",
+        alt: "VRAMfit — LLM Comparison Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpenBench — Can I Run This LLM?",
+    title: "VRAMfit — Can I Run This LLM?",
     description: "Instant VRAM requirements, quant recommendations, and inference recipes for local LLMs.",
     images: ["/og-image.png"],
   },
@@ -99,12 +99,12 @@ export default function RootLayout({
               <div className="space-y-1.5">
                 <a href="/community" className="block hover:text-bench-text transition-colors">Feed</a>
                 <a href="/badge"     className="block hover:text-bench-text transition-colors">Publish Badge</a>
-                <a href="https://github.com/openbench-ai/openbench" target="_blank" rel="noopener noreferrer" className="block hover:text-bench-text transition-colors">GitHub ↗</a>
+                <a href="https://github.com/truetube47-gif/vramfit" target="_blank" rel="noopener noreferrer" className="block hover:text-bench-text transition-colors">GitHub ↗</a>
               </div>
             </div>
           </div>
           <div className="max-w-6xl mx-auto px-4 pt-6 border-t border-bench-border/50 text-center">
-            OpenBench — Open-source LLM deployment intelligence.
+            VRAMfit — Open-source LLM deployment intelligence.
           </div>
         </footer>
       </body>

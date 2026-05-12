@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="frontend/public/pngtree-eurasian-eagle-owl-png-image_12527751-removebg-preview.png" alt="OpenBench Owl" width="110" height="110" />
+<img src="frontend/public/pngtree-eurasian-eagle-owl-png-image_12527751-removebg-preview.png" alt="VRAMfit Owl" width="110" height="110" />
 
-# OpenBench
+# VRAMfit
 
 ### Can I Run This LLM? Find Out in Seconds.
 
-**The open-source deployment intelligence platform for local LLMs.**
+**The open-source deployment intelligence platform for local LLMs. Find the perfect fit for your VRAM.**
 Realistic VRAM estimation, quantization selection, hardware compatibility checks, and inference speed prediction — all from your browser.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -15,7 +15,7 @@ Realistic VRAM estimation, quantization selection, hardware compatibility checks
 [![Next.js 14](https://img.shields.io/badge/Next.js-14-black.svg)](https://nextjs.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://fastapi.tiangolo.com)
 
-[Live Demo](https://openbench.ai) &bull; [API Docs](https://openbench.ai/docs) &bull; [Report Bug](https://github.com/truetube47-gif/openbench/issues/new?template=bug_report.md) &bull; [Request Feature](https://github.com/truetube47-gif/openbench/issues/new?template=feature_request.md)
+[Live Demo](https://vramfit.ai) &bull; [API Docs](https://vramfit.ai/docs) &bull; [Report Bug](https://github.com/truetube47-gif/vramfit/issues/new?template=bug_report.md) &bull; [Request Feature](https://github.com/truetube47-gif/vramfit/issues/new?template=feature_request.md)
 
 [English](README.md) | [中文](README.zh-CN.md)
 
@@ -36,9 +36,9 @@ You found a model on HuggingFace. Now what?
 
 ## The Solution
 
-OpenBench answers **"Can I run this?"** instantly:
+VRAMfit answers **"Can I run this?"** instantly:
 
-| You ask | OpenBench answers |
+| You ask | VRAMfit answers |
 |---------|-------------------|
 | *"Can I run Qwen3-14B on my RTX 3060?"* | ✅ Q4_K_M fits in 11.2 GB — expect ~38 tok/s |
 | *"Which quant for 8 GB VRAM?"* | IQ4_XS — best quality at your budget |
@@ -69,7 +69,7 @@ LLM inference is memory-bandwidth bound. We calculate tok/s from `bandwidth / mo
 ### Model Comparison
 Side-by-side analysis: benchmark scores, capability radar, quant ladders, speed estimates, and an AI-generated winner summary.
 
-**Built for model surgery workflows.** After fine-tuning, abliteration, LoRA merging, or DARE/TIES blending, models can silently lose capabilities in reasoning, coding, or instruction-following. OpenBench surfaces these regressions without subjective prompting — just upload both GGUFs and let the benchmarks speak.
+**Built for model surgery workflows.** After fine-tuning, abliteration, LoRA merging, or DARE/TIES blending, models can silently lose capabilities in reasoning, coding, or instruction-following. VRAMfit surfaces these regressions without subjective prompting — just upload both GGUFs and let the benchmarks speak.
 
 | Workflow | What to compare |
 |----------|-----------------|
@@ -226,7 +226,7 @@ Full API docs at `/docs` (development mode).
 - [ ] API keys for third-party integrations
 - [ ] Browser extension ("Check compatibility" on HuggingFace)
 - [ ] Mobile-optimized UI
-- [ ] Ollama integration (pull + run from OpenBench)
+- [ ] Ollama integration (pull + run from VRAMfit)
 
 ---
 
@@ -258,6 +258,6 @@ All performance estimates are calculated from published specifications and bandw
 
 **If this project helps you pick the right model for your hardware, consider giving it a star.**
 
-Made with precision by the OpenBench team.
+Made with precision by the VRAMfit team.
 
 </div>

@@ -1,4 +1,4 @@
-# OpenBench — Architecture Guide
+# VRAMfit — Architecture Guide
 
 This document defines the conventions that all contributors and AI coding agents must follow.  
 Its purpose is to prevent drift across sessions and maintain a coherent codebase.
@@ -7,7 +7,7 @@ Its purpose is to prevent drift across sessions and maintain a coherent codebase
 
 ## 1. Project Philosophy
 
-OpenBench is a **deployment intelligence platform**, not a benchmark leaderboard.  
+VRAMfit is a **deployment intelligence platform**, not a benchmark leaderboard.  
 Every feature must answer one of these user questions:
 
 - "Can I run this on my hardware?"

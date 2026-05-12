@@ -1,6 +1,6 @@
-# OpenBench — Product Roadmap
+# VRAMfit — Product Roadmap
 
-OpenBench's mission: **become the PCPartPicker of local LLM deployment.**
+VRAMfit's mission: **become the PCPartPicker of local LLM deployment.**
 
 ---
 
