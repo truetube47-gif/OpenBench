@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #080B12;
+  --surface: #0F1520;
+  --card: #141B2D;
+  --border: #1E2A42;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: #E2E8F0;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #2E3E5A; }
+
+/* Glow utilities */
+@layer utilities {
+  .glow-indigo {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+  }
+  .glow-green {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #6366F1, #8B5CF6, #A78BFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-green {
+    background: linear-gradient(135deg, #22C55E, #16A34A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .border-gradient {
+    border: 1px solid transparent;
+    background-clip: padding-box;
+  }
+}
+
+/* Recharts dark theme overrides */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #1E2A42;
+}
+.recharts-text {
+  fill: #8892A4 !important;
+  font-size: 11px;
+}
+.recharts-legend-item-text {
+  color: #8892A4 !important;
+}
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: #141B2D !important;
+  border: 1px solid #1E2A42 !important;
+  border-radius: 8px !important;
+}
